@@ -1,0 +1,21 @@
+{
+  "name": "cms-xml-parser",
+  "author": "Suleyman Yilmaz",
+  "version": "0.0.1",
+  "description": "CMS XML Parser",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build:live",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "0.0.43",
+    "@types/node": "^10.12.18"
+  },
+  "dependencies": {
+    "@types/xml2js": "^0.4.3",
+    "xml2js": "^0.4.19"
+  }
+}
